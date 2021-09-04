@@ -961,12 +961,16 @@
   
   }
   .section-1 input{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 22px;
-    border-color: #c71e80;
-    padding: 13px;
     background-color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+    border-color: #c71e80 ;
+    border: #c71e80 solid 1px;
+    display: flex;
+    padding: 13px;
+    border-radius: 1rem;
   }
   .section-2{
     background-color:#212121;
@@ -980,12 +984,16 @@
   
   }
   .section-2 input{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #444;
-    font-size: 22px;
-    border-color: #c71e80;
-    padding: 13px;
     background-color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+    border-color: #c71e80 ;
+    border: #c71e80 solid 1px;
+    display: flex;
+    padding: 13px;
+    border-radius: 1rem;
   
   }
   #Quantidade{
@@ -1000,7 +1008,18 @@
     padding: 13px;
     border-radius: 1rem;
   }
-  
+  #Tamanho{
+    background-color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+    border-color: #c71e80 ;
+    border: #c71e80 solid 1px;
+    display: flex;
+    padding: 13px;
+    border-radius: 1rem;
+  }
   .select-produtos{
     background-color: #212121;
     font-family: Arial, Helvetica, sans-serif;
@@ -1093,18 +1112,22 @@
     border: 2px solid white;
     cursor: pointer;
   }
-
+  
   /*ESTOQUE*/
   /*ESTOQUE*/
   /*ESTOQUE*/
 
   #tabela-prod{
-    margin-top: 50px;
+    border: black solid 2px;
+    padding: 5px;
     text-align: center;
-    background: #333;
-    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    overflow: auto;
+    border-collapse: collapse;
+    margin: auto;
   }
-  #name-prod{
+  td{
     border: black solid 2px;
     padding: 5px;
     text-align: center;
@@ -1112,8 +1135,17 @@
     width: 100%;
     overflow: auto;
     border-collapse: collapse;
-
-
+  }
+  #name-prod{
+    background-color: lightblue;
+    font-size: 19px;
+    padding-right: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: black solid 2px;
+    width: 15%;
+    margin-top: 50px;
+    overflow: auto;
+    border-collapse: collapse;
   }
   #tbody-prod{
     background-color: lightblue;
@@ -1126,52 +1158,7 @@
 
 
   }
-  .button-img{
-    max-width: 500px;
-    width: 100%;
-  }
-  #Arquivo{
-    display: none;
-    background-color: white;
-  }
-  #file-img{
-    font-size: 20px;
-    cursor: pointer;
-    background-color: white;
-    border: #c71e80 solid 2px;
-    
-  }
-  #file-img:hover{
-    transition: 0.3s;
-    font-size: 22px;
-
-  }
-  #button-file{
-    font-size: 20px;
-    cursor: pointer;
-    background-color: white;
-    border: #c71e80 solid 2px;
-  }
-  #spanTxt{
-    color: white;
-    margin-left: 5px;
-    font-family: sans-serif;
-  }
-  .image-input{
-    background-color: white;
-    border: #c71e80 1px solid;
-    width: 150px;
-    height: 125px;
-    background-size: cover;
-    border-radius: 1rem;
-    background-position: center;
-    
-  }
-  .imagem{
-    height: 75px;
-    border: 1px solid #000;
-    margin: 10px 5px 0 0;
-  }
+  
   /* FOOTER */
   /* FOOTER */
   /* FOOTER */

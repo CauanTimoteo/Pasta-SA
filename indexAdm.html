@@ -46,29 +46,28 @@
 <form>
     <div class="container-produtos">
     <div class="section-1">
-        <label for="teste">Nome do produto</label>
+        <label for="Nome do produto">Nome do produto</label>
         <input type="text" id="Nome" autocomplete="off" placeholder="Digite o nome do produto"> 
     </div>
     <div class="section-2">
-        <label for="teste2">Marca do produto
+        <label for="Marca do produto">Marca do produto
         <input type="text" id="Marca" autocomplete="off" placeholder="Digite a marca do produto">
     </label>
     </div>
     <div class="select-produtos">
-        <label for="produtos para add">Quantidade de produtos
+        <label for="Quantidade de produtos">Quantidade do produto
         <input type="text" id="Quantidade" autocomplete="off" placeholder="Digite a quantidade de produtos">
         </label>
     </div>
+    <div class="select-produtos">
+        <label for="Tamanho dos produtos">Tamanho do produto
+        <input type="text" id="Tamanho" autocomplete="off" placeholder="Digite o tamanho">
+        </label>
+    </div>
     <div class="prod-desc">
-        <label for="prod-desc">Descrição do produto</label>
+        <label for="Descrição do produto">Descrição do produto</label>
             <br>
         <textarea id="Textarea" cols="40" rows="18" placeholder="Digite a descrição do produto"></textarea>
-    </div>
-    <div class="button-img">
-        <label for="Arquivo" id="file-img">Imagem do produto
-        <input type="file" id="Arquivo" name="Arquivo[]" accept=".jpg , .jpeg , .png ">
-     
-        </label>
     </div>
 <div class="button-config">
     <button type="button" id="btn-success" onclick="AddEstoque()" value="Add">Confirmar</button>
@@ -84,12 +83,14 @@
     <th id="name-prod">Nome</th>
     <th id="name-prod">Marca</th>
     <th id="name-prod">Quantidade</th>
+    <th id="name-prod">Tamanho</th>
     <th id="name-prod">Textarea</th>
-    <th id="name-prod">Teste</th>
 </tr>
 </thead>
 <tbody id="tbody-prod"></tbody>
 </table>
 </body>
 <script src="./adm.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
