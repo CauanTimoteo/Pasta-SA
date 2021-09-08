@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/639a640fc0.js" crossorigin="anonymous"></script>
-    <script src="vagas.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <nav>
@@ -31,11 +32,6 @@
             <li>
                 <a style="letter-spacing: normal;" href="user.html">
                     <i style="letter-spacing: normal;" class="fas fa-user-circle"></i>
-                </a>
-            </li>
-            <li>
-                <a href="cart.html">
-                    <i style="letter-spacing: normal;" class="fas fa-shopping-cart"></i>
                 </a>
             </li>
             <li>
@@ -114,18 +110,14 @@
             <br>
             <br>
             <br>
-            <div class="col">
-                <div class="col-md-6">
-                    <img src="./imgs/Logo formulario.png" alt="Logo Clock Inc. Right Timing">
-                </div>
                 <div class="container">
                     <div class="form-group">
                         <label for="Nome">Nome:</label>
-                        <input type="text" id="Nome" placeholder="Digite seu nome completo" required>
+                        <input type="text" id="Nome" placeholder="Digite seu nome completo" autocomplete="off">
                     </div>
                     <div class="block-gen">
                         <label for="Gênero">Gênero:
-                            <select class="select-gen" id="Gênero">
+                            <select class="select-gen" id="Gênero" autocomplete="off">
                                 <option></option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Feminino">Feminino</option>
@@ -135,24 +127,23 @@
                     </div>
                     <div class=" form-group">
                         <label for="CPF">CPF:</label>
-                        <input type="text" id="CPF" placeholder="Digite seu CPF" required>
+                        <input type="text" id="CPF" placeholder="Digite seu CPF" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="RG">RG:</label>
-                        <input type="text" id="RG" placeholder="Digite o numero do seu RG" required>
+                        <input type="text" id="RG" placeholder="Digite o numero do seu RG" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="Data de nascimento">Data de nascimento:</label>
-                        <input type="date" id="DataDeNascimento" placeholder="Digite sua data de nascimento"
-                            required>
+                        <input type="text" id="DataDeNascimento" placeholder="Digite sua data de nascimento" autocomplete="off">
                     </div>
                     <div class="row">
                         <label for="Idade">Idade:</label>
-                        <input type="text" id="Idade" placeholder="Digite sua idade" required>
+                        <input type="text" id="Idade" placeholder="Digite sua idade" autocomplete="off">
                     </div>
                     <div class="block-col">
                         <label for="Grau de instrução">Grau de instrução:
-                            <select class="select-col" id="Ensino">
+                            <select class="select-col" id="Ensino" autocomplete="off">
                                 <option></option>
                                 <option value="Analfabeto">Analfabeto</option>
                                 <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
@@ -167,36 +158,37 @@
                     </div>
                     <div class="row">
                         <label for="Nome do pai">Nome do pai:</label>
-                        <input type="text" id="NomeDoPai" placeholder="Nome do seu pai" required>
+                        <input type="text" id="NomeDoPai" placeholder="Nome do seu pai" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="Nome da mãe">Nome da mãe:</label>
-                        <input type="text" id="NomeDaMãe" placeholder="Nome da sua mãe" required>
+                        <input type="text" id="NomeDaMae" placeholder="Nome da sua mãe" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="Telefone">Telefone:</label>
-                        <input type="tel" id="Telefone" placeholder="Digite seu telefone" required>
+                        <input type="tel" id="Telefone" placeholder="Digite seu telefone" autocomplete="off">
                     </div>
                     <div class="block-col">
                         <label for="Estado">Estado:</label>
-                        <input type="text" id="Estado" placeholder="Digite o seu estado">
+                        <input type="text" id="Estado" placeholder="Digite o seu estado" autocomplete="off">
                     </label>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" placeholder="Digite um email para contato" required>
+                        <input type="email" id="email" placeholder="Digite um email para contato" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="Municipio">Município:</label>
-                        <input type="text" id="Municipio" placeholder="Digite o municipio onde você mora" required>
+                        <input type="text" id="Municipio" placeholder="Digite o municipio onde você mora" autocomplete="off">
                     </div>
                     
                     <div class="row">
                         <label for="Bairro">Bairro:</label>
-                        <input type="text" id="Bairro" placeholder="Digite o bairro onde você mora" required>
+                        <input type="text" id="Bairro" placeholder="Digite o bairro onde você mora" autocomplete="off">
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="button" id="btn-hit">Enviar</button>
+                        <button type="reset" id="btn-clear">Limpar</button>
                     </div>
                 </div>
     </form>
@@ -221,9 +213,9 @@
                 <h2>Follow</h2>
                 <a href="https://www.instagram.com/">Instagram</a>
                 <a href="https://pt-br.facebook.com/">Facebook</a>
-                <a href="#">Youtube</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://twitter.com/twitter">Twitter</a>
+                <a href="https://br.linkedin.com/">LinkedIn</a>
             </div>
             <div class="footer-email-form">
                 <h2>Newsletter</h2>
@@ -240,6 +232,6 @@
         &copy; Clock Inc. | Designed by Clock Meddia | Todas as imagens são de uso educacional e sem fins lucrativos.
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="vagas.js"></script>
 </body>
 </html>

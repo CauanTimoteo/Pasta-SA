@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/639a640fc0.js" crossorigin="anonymous"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body style="background-color:white; height: 100vh;
 font-family: Arial, Helvetica, sans-serif;">
@@ -31,11 +33,6 @@ font-family: Arial, Helvetica, sans-serif;">
             <li>
                 <a style="letter-spacing: normal;" href="user.html">
                     <i style="letter-spacing: normal;" class="fas fa-user-circle"></i>
-                </a>
-            </li>
-            <li>
-                <a href="cart.html">
-                    <i style="letter-spacing: normal;" class="fas fa-shopping-cart"></i>
                 </a>
             </li>
             <li>
@@ -104,31 +101,26 @@ font-family: Arial, Helvetica, sans-serif;">
     <br>
     <br>
     <br>
-    <h4>Report here</h4>
+    <h4>Problemas de navegação no site? Reporte aqui seu problema</h4>
     <br>
     <br>
     <br>
 
- <form action="#">
-
-
+ <form>
     <div class="container-2">
       <div class="col-2-name">
-        <label for="Nome">Nome:
-        <input type="text" placeholder="Digite seu Nome">
-      </label> 
-      </label>
+        <label for="Nome">Nome:</label>
+        <input type="text" placeholder="Digite seu Nome" id="Name" autocomplete="off">
     </div>
     <br>
     <div class="col-2-email">
-        <label for="Email">Email:
-        <input type="email" name="email" placeholder="Digite seu E-mail"> 
-      </label>
+        <label for="Email">Email:</label>
+        <input type="email" name="email" placeholder="Digite seu E-mail" id="Email" autocomplete="off"> 
     </div>
     <br>
     <div class="row-report">
-        <label for="Problems">Reporte Erros:
-        <select class="select-row">
+        <label for="Problemas">Selecione aqui o problema aparente:
+        <select class="select-row" id="Select" autocomplete="off">
           <option></option>
           <option value="Problema de navegação entre as paginas">Problemas na navegação entre as páginas</option>
           <option value="Problemas nas politicas de devolução">Problemas na hora de delvolver algum produto</option>
@@ -141,15 +133,15 @@ font-family: Arial, Helvetica, sans-serif;">
     </div>
     <br>
     <div class="row-2-message">
-        <label for="caixa de mensagem">Qual a sua reclamação? 
-        <textarea id="Caixa de mensagem" rows="18" placeholder="Explique aqui seu problema"></textarea>
-      </label>
+        <label for="caixa de mensagem">Qual a sua reclamação?</label>
+        <textarea id="Caixa de mensagem" rows="18" placeholder="Explique aqui seu problema" autocomplete="off"></textarea>
     </div>
     <br>
     <div class="col-2-button">
-      <button type="submit" class="btn btn-success" onclick="">Enviar</button>
+      <button type="button" id="button-success">Enviar</button>
+      <button type="reset" id="button-clean">Limpar</button>
     </div>
-</div>
+    </div>
 </form>
 <br>
 <div class="footer-container">
@@ -192,7 +184,7 @@ font-family: Arial, Helvetica, sans-serif;">
     &copy; Clock Inc. | Designed by Clock Meddia | Todas as imagens são de uso educacional e sem fins lucrativos.
 </div>
 
-<script src="./js/script.js"></script>
+<script src="./repport.js"></script>
 
 </body>
 </html>

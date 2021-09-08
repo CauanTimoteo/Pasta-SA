@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/639a640fc0.js" crossorigin="anonymous"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body style="background: white;">
+<body style="background: white;" onload="">
     <nav>
         <div class="logo">
             Clock&copy; <code style="color: #c71e81;">Inc.</code>  <code style="color: white">Adm Section</code>
@@ -28,10 +30,9 @@
                     <i style="letter-spacing: normal;" class="fas fa-user-circle"></i>
                 </a>
             </li>  
-            <li><a href="indexADM.html">PRODUTOS</a></li>
+            <li><a href="indexADM.html">ESTOQUE</a></li>
             <li><a href="#">SEGURANÇA</a></li>
             <li><a href="#">USUARIOS</a></li>
-            <li><a href="#">CONTATOS</a></li>
         </ul>
     </nav>
 
@@ -40,7 +41,7 @@
     <br>
     <br>
     <br>
-    <h4>Cadastro de produtos</h4>
+    <h4>Controle de estoque</h4>
     <br>
     <br>
 <form>
@@ -70,13 +71,14 @@
         <textarea id="Textarea" cols="40" rows="18" placeholder="Digite a descrição do produto"></textarea>
     </div>
 <div class="button-config">
-    <button type="button" id="btn-success" onclick="AddEstoque()" value="Add">Confirmar</button>
-    <button type="reset" id="btn-warning" value="clean">Limpar</button>
+    <button type="button" id="btn-success" value="Add">Confirmar</button>
+    <button type="reset"  id="btn-warning">Limpar</button>
 </div>
 </form>
 </div>
 </div>
 <br>
+<div class="tabela"></div>
 <table id="tabela-prod">
 <thead>
 <tr>
@@ -84,13 +86,12 @@
     <th id="name-prod">Marca</th>
     <th id="name-prod">Quantidade</th>
     <th id="name-prod">Tamanho</th>
-    <th id="name-prod">Textarea</th>
+    <th id="name-prod">Descrição</th>
 </tr>
 </thead>
-<tbody id="tbody-prod"></tbody>
 </table>
+</div>
+</div>
 </body>
 <script src="./adm.js"></script>
-<script src="sweetalert2.all.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
